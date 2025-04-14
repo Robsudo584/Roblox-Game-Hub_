@@ -2,45 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Roblox Game Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #e0f0ff;
+      font-family: 'Rubik', sans-serif;
       margin: 0;
-      padding: 0;
+      background: #f0f4f8;
+      color: #333;
     }
+
     header {
-      background-color: #007bff;
+      background: linear-gradient(90deg, #005bea, #00c6fb);
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 60px 20px;
     }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
     nav {
-      background-color: #0056b3;
-      padding: 10px;
-      text-align: center;
+      background: #0047a3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
     }
+
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
+
     .section-title {
-      color: #007bff;
+      font-size: 2em;
+      color: #005bea;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      background: #003366;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Roblox Game Hub</h1>
-    <p>Explore the world of Roblox games</p>
+    <p>Explore the best games, share your fan content, and connect with the community</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#reviews">Game Reviews</a>
@@ -50,22 +98,34 @@
 
   <section id="about">
     <h2 class="section-title">About</h2>
-    <p>Roblox Game Hub is your go-to fan page for the latest and greatest games in the Roblox universe. We bring together reviews, fan creations, and gameplay secrets—all by fans, for fans!</p>
+    <div class="card">
+      <p>Welcome to Roblox Game Hub! A space built by and for fans of the Roblox universe. Here you’ll find highlights, guides, fan art, and everything to fuel your Roblox passion.</p>
+    </div>
   </section>
 
   <section id="reviews">
     <h2 class="section-title">Game Reviews</h2>
-    <p>Check out our reviews of trending Roblox games, written by passionate players like you.</p>
+    <div class="card">
+      <p>Read honest reviews and rankings of trending Roblox games. Discover hidden gems and top fan favorites.</p>
+    </div>
   </section>
 
   <section id="fan">
     <h2 class="section-title">Fan Content</h2>
-    <p>We showcase the best fan art, videos, and game clips from across the Roblox community.</p>
+    <div class="card">
+      <p>From artwork to gameplay clips, this is where creativity shines. Submit your best work and get featured!</p>
+    </div>
   </section>
 
   <section id="tips">
     <h2 class="section-title">Tips & Tricks</h2>
-    <p>Want to level up fast or unlock hidden secrets? Our tips & tricks section has you covered.</p>
+    <div class="card">
+      <p>Want to level up faster or find secrets in your favorite games? Check out our pro tips and hidden strategies.</p>
+    </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Roblox Game Hub. Built by fans, for fans.</p>
+  </footer>
 </body>
 </html>
